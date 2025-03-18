@@ -47,6 +47,7 @@ class VMIME_EXPORT charset : public component
 public:
 
 	charset();
+	charset(const charset& other) = default;
 	charset(const string& name);
 	charset(const char* name); // to allow creation from vmime::charsets constants
 
